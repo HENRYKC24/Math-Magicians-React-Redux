@@ -1,3 +1,8 @@
+# Math-Magicians
+This is a calculator app with other features built in it. It has some quotes on mathematics on a different page.
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+![screenshot](./app_screenshot.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +73,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Author
+
+👤 **Henry Kc**
+
+- GitHub: [@githubhandle](https://github.com/henrykc24)
+- Twitter: [@twitterhandle](https://twitter.com/henrykc24)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/henry-kc)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/HENRYKC24/Math-Magicians/issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- I remain indepted to the Facebook team that develop create-react-app as open source.
+- A special thanks to Microverse for inspiring this project. I indebted to you all at Microverse
+- A special thanks goes to all my peers at Microverse for being ther for me.
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
