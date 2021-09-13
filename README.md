@@ -1,3 +1,8 @@
+# Math-Magicians
+This is a calculator app with other features built in it. It has some quotes on mathematics on a different page.
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+![screenshot](./app_screenshot.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
