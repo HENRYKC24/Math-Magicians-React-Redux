@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  width: 24.9%;
+  padding: 0;
+  margin: 0;
+}
+
+tr:first-child td {
+  text-align: right;
+  width: 100%;
+  padding-right: 10px;
+}
+
+tr:not(:first-child) td:last-child {
+  background-color: #f5913e;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+tr:last-child td:first-child {
+  width: 50.4%;
+}
+
+tr:first-child {
+  background-color: #858693;
+  color: #fff;
+}
+
+tr:not(:first-child) td:hover {
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+tr:not(:first-child) td:active {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (min-width: 800px) {
+  tr:last-child td:first-child {
+    width: 50.1%;
+  }
+
+  tr {
+    height: 80px;
+  }
+}

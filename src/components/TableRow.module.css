@@ -1,0 +1,5 @@
+.tr {
+  display: flex;
+  justify-content: center;
+  line-height: 70px;
+}
