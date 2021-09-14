@@ -10,7 +10,7 @@ export default class Calculator extends Component {
   render() {
     const tableData = [
       [0],
-      ['AC', '+/-', '%', '+'],
+      ['AC', '+/-', '%', `${String.fromCharCode(247)}`],
       [7, 8, 9, `${String.fromCharCode(215)}`],
       [4, 5, 6, '-'],
       [1, 2, 3, '+'],
