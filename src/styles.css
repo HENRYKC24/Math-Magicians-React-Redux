@@ -11,6 +11,9 @@ td {
 
 tr:not(:first-child) td:last-child {
   background-color: #f5913e;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 tr:last-child td:first-child {
@@ -25,10 +28,20 @@ tr:first-child {
 tr:first-child td {
   text-align: right;
   width: 100%;
+  padding-right: 10px;
+}
+
+tr:not(:first-child) td:hover {
+  background-color: #555;
+  color: #fff;
 }
 
 @media screen and (min-width: 800px) {
   tr:last-child td:first-child {
     width: 50.1%;
+  }
+
+  tr {
+    height: 80px;
   }
 }
