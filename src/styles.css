@@ -34,6 +34,12 @@ tr:first-child td {
 tr:not(:first-child) td:hover {
   background-color: #555;
   color: #fff;
+  cursor: pointer;
+}
+
+tr:not(:first-child) td:active {
+  background-color: #fff;
+  color: #000;
 }
 
 @media screen and (min-width: 800px) {
