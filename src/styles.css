@@ -16,6 +16,12 @@ tr:not(:first-child) td:last-child {
   font-weight: bold;
 }
 
+tr:first-child td {
+  text-align: right;
+  width: 100%;
+  padding-right: 10px;
+}
+
 tr:last-child td:first-child {
   width: 50.4%;
 }
@@ -23,12 +29,6 @@ tr:last-child td:first-child {
 tr:first-child {
   background-color: #858693;
   color: #fff;
-}
-
-tr:first-child td {
-  text-align: right;
-  width: 100%;
-  padding-right: 10px;
 }
 
 tr:not(:first-child) td:hover {
