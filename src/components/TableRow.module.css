@@ -1,6 +1,5 @@
 .tr {
   display: flex;
   justify-content: center;
-  height: 70px;
   line-height: 70px;
 }
