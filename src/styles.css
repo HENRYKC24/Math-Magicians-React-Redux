@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  width: 24.9%;
+  padding: 0;
+  margin: 0;
+}
+
+tr:not(:first-child) td:last-child {
+  background-color: #f5913e;
+}
+
+tr:last-child td:first-child {
+  width: 50.4%;
+}
+
+tr:first-child {
+  background-color: #858693;
+  color: #fff;
+}
+
+tr:first-child td {
+  text-align: right;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  tr:last-child td:first-child {
+    width: 50.1%;
+  }
+}
