@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/HENRYKC24/Math-Magicians-React-Redux/static/css/main.177788a5.chunk.css",
-    "main.js": "/HENRYKC24/Math-Magicians-React-Redux/static/js/main.8d880991.chunk.js",
-    "main.js.map": "/HENRYKC24/Math-Magicians-React-Redux/static/js/main.8d880991.chunk.js.map",
-    "runtime-main.js": "/HENRYKC24/Math-Magicians-React-Redux/static/js/runtime-main.f51e66c4.js",
-    "runtime-main.js.map": "/HENRYKC24/Math-Magicians-React-Redux/static/js/runtime-main.f51e66c4.js.map",
-    "static/js/2.7025644a.chunk.js": "/HENRYKC24/Math-Magicians-React-Redux/static/js/2.7025644a.chunk.js",
-    "static/js/2.7025644a.chunk.js.map": "/HENRYKC24/Math-Magicians-React-Redux/static/js/2.7025644a.chunk.js.map",
+    "main.js": "/HENRYKC24/Math-Magicians-React-Redux/static/js/main.b02e63ed.chunk.js",
+    "main.js.map": "/HENRYKC24/Math-Magicians-React-Redux/static/js/main.b02e63ed.chunk.js.map",
+    "runtime-main.js": "/HENRYKC24/Math-Magicians-React-Redux/static/js/runtime-main.4db3b0af.js",
+    "runtime-main.js.map": "/HENRYKC24/Math-Magicians-React-Redux/static/js/runtime-main.4db3b0af.js.map",
+    "static/js/2.8fa72824.chunk.js": "/HENRYKC24/Math-Magicians-React-Redux/static/js/2.8fa72824.chunk.js",
+    "static/js/2.8fa72824.chunk.js.map": "/HENRYKC24/Math-Magicians-React-Redux/static/js/2.8fa72824.chunk.js.map",
     "index.html": "/HENRYKC24/Math-Magicians-React-Redux/index.html",
     "static/css/main.177788a5.chunk.css.map": "/HENRYKC24/Math-Magicians-React-Redux/static/css/main.177788a5.chunk.css.map",
-    "static/js/2.7025644a.chunk.js.LICENSE.txt": "/HENRYKC24/Math-Magicians-React-Redux/static/js/2.7025644a.chunk.js.LICENSE.txt"
+    "static/js/2.8fa72824.chunk.js.LICENSE.txt": "/HENRYKC24/Math-Magicians-React-Redux/static/js/2.8fa72824.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f51e66c4.js",
-    "static/js/2.7025644a.chunk.js",
+    "static/js/runtime-main.4db3b0af.js",
+    "static/js/2.8fa72824.chunk.js",
     "static/css/main.177788a5.chunk.css",
-    "static/js/main.8d880991.chunk.js"
+    "static/js/main.b02e63ed.chunk.js"
   ]
 }
