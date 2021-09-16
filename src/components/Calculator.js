@@ -1,44 +1,36 @@
-import propTypes from 'prop-types';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculator';
 import Table from './Table';
 
-export default class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
-  handleClick = (data) => {
-    this.setState((obj) => calculate(obj, data));
+  const handleClick = (data) => {
+    setState((obj) => {
+      const newObject = calculate(state, data);
+      return {
+        ...obj,
+        ...newObject,
+      };
+    });
   };
 
-  render() {
-    const tableData = [
-      [0],
-      ['AC', '+/-', '%', `${String.fromCharCode(247)}`],
-      ['7', '8', '9', 'x'],
-      ['4', '5', '6', '-'],
-      ['1', '2', '3', '+'],
-      ['0', '.', '='],
-    ];
+  const tableData = [
+    [0],
+    ['AC', '+/-', '%', `${String.fromCharCode(247)}`],
+    ['7', '8', '9', 'x'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['0', '.', '='],
+  ];
 
-    const { next, operation, total } = this.state;
-    const otherProps = {
-      next,
-      operation,
-      total,
-    };
-
-    return <Table otherProps={otherProps} handleClick={this.handleClick} tableData={tableData} />;
-  }
-}
-
-Calculator.prototypes = {
-  otherProps: propTypes.instanceOf(Object).isRequired,
+  return (
+    <Table otherProps={state} handleClick={handleClick} tableData={tableData} />
+  );
 };
+
+export default Calculator;
