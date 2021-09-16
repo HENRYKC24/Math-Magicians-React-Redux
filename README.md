@@ -1,11 +1,11 @@
-# Math-Magicians
+# Math-Magicians-React-Redux
 This is a calculator app with other features built in it. It has some quotes on mathematics on a different page.
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ![screenshot](./app_screenshot.png)
 
 ## LiveLink
-[LiveLink](https://henrykc24.github.io/Math-Magicians/)
+[LiveLink](https://henrykc24.github.io/Math-Magicians-React-Redux/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -90,7 +90,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/HENRYKC24/Math-Magicians/issues/).
+Feel free to check the [issues page](https://github.com/HENRYKC24/Math-Magicians-React-Redux/issues/).
 
 ## Show your support
 
