@@ -10,26 +10,14 @@ const Table = (props) => {
   return (
     <table className={table}>
       <tbody>
-        {tableData.map((rowData, ind) => {
-          if (ind === 0) {
-            return (
-              <TableRow
-                key={Math.random()}
-                handleClick={handleClick}
-                rowData={rowData}
-                otherProps={otherProps}
-              />
-            );
-          }
-          return (
-            <TableRow
-              key={Math.random()}
-              handleClick={handleClick}
-              rowData={rowData}
-              otherProps={otherProps}
-            />
-          );
-        })}
+        {tableData.map((rowData) => (
+          <TableRow
+            key={Math.random()}
+            handleClick={handleClick}
+            rowData={rowData}
+            otherProps={otherProps}
+          />
+        ))}
       </tbody>
     </table>
   );
