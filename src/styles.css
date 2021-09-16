@@ -9,7 +9,8 @@ td {
   margin: 0;
 }
 
-tr:first-child td {
+tr:first-child td,
+tr:first-child td span {
   text-align: right;
   width: 100%;
   padding-right: 10px;

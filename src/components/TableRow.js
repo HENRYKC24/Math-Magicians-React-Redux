@@ -11,15 +11,23 @@ class TableRow extends Component {
 
   render() {
     const { tr } = styles;
-    const { isFirst, rowData } = this.props;
+    const {
+      rowData,
+      handleClick,
+      otherProps,
+    } = this.props;
+
     return (
       <tr className={tr}>
-        {rowData.map((data, ind) => {
-          if (ind === 0 && isFirst) {
-            return <TableData key={Math.random()} isFirst={isFirst} data={data} />;
-          }
-          return <TableData key={Math.random()} isFirst={false} data={data} />;
-        })}
+        {rowData.map((data) => (
+          <TableData
+            key={Math.random()}
+            stateObj={this.state}
+            data={data}
+            handleClick={handleClick}
+            otherProps={otherProps}
+          />
+        ))}
       </tr>
     );
   }
@@ -27,7 +35,8 @@ class TableRow extends Component {
 
 TableRow.propTypes = {
   rowData: propTypes.instanceOf(Array).isRequired,
-  isFirst: propTypes.bool.isRequired,
+  handleClick: propTypes.func.isRequired,
+  otherProps: propTypes.instanceOf(Object).isRequired,
 };
 
 export default TableRow;

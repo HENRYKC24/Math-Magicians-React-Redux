@@ -10,16 +10,37 @@ class TableData extends Component {
 
   render() {
     const { td } = styles;
-    const { data } = this.props;
-    return <td className={td}>{data}</td>;
+    const {
+      data,
+      handleClick,
+      otherProps,
+    } = this.props;
+    const { next, operation, total } = otherProps;
+    return data === 0 ? (
+      <td className={td}>
+        <div>
+          <span>{total}</span>
+          <span>{operation}</span>
+          <span>{next}</span>
+        </div>
+      </td>
+    ) : (
+      <td className={td}>
+        <div
+          aria-hidden
+          onClick={() => handleClick(data)}
+        >
+          {data}
+        </div>
+      </td>
+    );
   }
 }
 
 TableData.propTypes = {
-  data: propTypes.oneOfType([
-    propTypes.string,
-    propTypes.number,
-  ]),
+  data: propTypes.oneOfType([propTypes.string, propTypes.number]),
+  handleClick: propTypes.func.isRequired,
+  otherProps: propTypes.instanceOf(Object).isRequired,
 };
 
 TableData.defaultProps = {
