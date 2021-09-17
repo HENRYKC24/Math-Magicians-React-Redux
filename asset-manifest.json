@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Math-Magicians-React-Redux/static/css/main.177788a5.chunk.css",
-    "main.js": "/Math-Magicians-React-Redux/static/js/main.e15af720.chunk.js",
-    "main.js.map": "/Math-Magicians-React-Redux/static/js/main.e15af720.chunk.js.map",
+    "main.css": "/Math-Magicians-React-Redux/static/css/main.fb68ea14.chunk.css",
+    "main.js": "/Math-Magicians-React-Redux/static/js/main.3ccc2678.chunk.js",
+    "main.js.map": "/Math-Magicians-React-Redux/static/js/main.3ccc2678.chunk.js.map",
     "runtime-main.js": "/Math-Magicians-React-Redux/static/js/runtime-main.cde72bab.js",
     "runtime-main.js.map": "/Math-Magicians-React-Redux/static/js/runtime-main.cde72bab.js.map",
-    "static/js/2.6a458825.chunk.js": "/Math-Magicians-React-Redux/static/js/2.6a458825.chunk.js",
-    "static/js/2.6a458825.chunk.js.map": "/Math-Magicians-React-Redux/static/js/2.6a458825.chunk.js.map",
+    "static/js/2.2c73197e.chunk.js": "/Math-Magicians-React-Redux/static/js/2.2c73197e.chunk.js",
+    "static/js/2.2c73197e.chunk.js.map": "/Math-Magicians-React-Redux/static/js/2.2c73197e.chunk.js.map",
     "index.html": "/Math-Magicians-React-Redux/index.html",
-    "static/css/main.177788a5.chunk.css.map": "/Math-Magicians-React-Redux/static/css/main.177788a5.chunk.css.map",
-    "static/js/2.6a458825.chunk.js.LICENSE.txt": "/Math-Magicians-React-Redux/static/js/2.6a458825.chunk.js.LICENSE.txt"
+    "static/css/main.fb68ea14.chunk.css.map": "/Math-Magicians-React-Redux/static/css/main.fb68ea14.chunk.css.map",
+    "static/js/2.2c73197e.chunk.js.LICENSE.txt": "/Math-Magicians-React-Redux/static/js/2.2c73197e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cde72bab.js",
-    "static/js/2.6a458825.chunk.js",
-    "static/css/main.177788a5.chunk.css",
-    "static/js/main.e15af720.chunk.js"
+    "static/js/2.2c73197e.chunk.js",
+    "static/css/main.fb68ea14.chunk.css",
+    "static/js/main.3ccc2678.chunk.js"
   ]
 }
