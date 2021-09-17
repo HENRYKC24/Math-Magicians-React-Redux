@@ -1,27 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TableRow from './TableRow';
-import styles from './Table.module.css';
+import { table } from './Table.module.css';
 
-const Table = (props) => {
-  const { table } = styles;
-  const { tableData, handleClick, otherProps } = props;
-
-  return (
-    <table className={table}>
-      <tbody>
-        {tableData.map((rowData) => (
-          <TableRow
-            key={Math.random()}
-            handleClick={handleClick}
-            rowData={rowData}
-            otherProps={otherProps}
-          />
-        ))}
-      </tbody>
-    </table>
-  );
-};
+const Table = ({ tableData, handleClick, otherProps }) => (
+  <table className={table}>
+    <tbody>
+      {tableData.map((rowData) => (
+        <TableRow
+          key={Math.random()}
+          handleClick={handleClick}
+          rowData={rowData}
+          otherProps={otherProps}
+        />
+      ))}
+    </tbody>
+  </table>
+);
 
 Table.propTypes = {
   tableData: PropTypes.instanceOf(Array).isRequired,
