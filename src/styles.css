@@ -45,6 +45,11 @@ tr:not(:first-child) td:active {
 }
 
 @media screen and (min-width: 800px) {
+  tr:first-child td,
+  tr:first-child td span {
+    font-size: 2rem;
+  }
+
   tr:last-child td:first-child {
     width: 50.1%;
   }
@@ -52,9 +57,4 @@ tr:not(:first-child) td:active {
   tr {
     height: 80px;
   }
-
-  tr:first-child td,
-  tr:first-child td span {
-  font-size: 2rem;
-}
 }
