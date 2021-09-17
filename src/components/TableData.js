@@ -3,13 +3,18 @@ import propTypes from 'prop-types';
 import { td } from './TableData.module.css';
 import TableScreen from './TableScreen';
 
-const TableData = ({ data, handleClick, otherProps }) => {
-  const { next, operation, total } = otherProps;
+const TableData = ({
+  data,
+  handleClick,
+  otherProps: { next, operation, total },
+}) => {
   const mapArray = [total, operation, next];
   return data === 0 ? (
     <td className={td}>
       <div>
-        {mapArray.map((data) => <TableScreen key={Math.random()} data={data} />)}
+        {mapArray.map((data) => (
+          <TableScreen key={Math.random()} data={data} />
+        ))}
       </div>
     </td>
   ) : (
