@@ -1,11 +1,9 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import styles from './tableData.module.css';
+import { td } from './TableData.module.css';
 import TableScreen from './TableScreen';
 
-const TableData = (props) => {
-  const { td } = styles;
-  const { data, handleClick, otherProps } = props;
+const TableData = ({ data, handleClick, otherProps }) => {
   const { next, operation, total } = otherProps;
   const mapArray = [total, operation, next];
   return data === 0 ? (
