@@ -1,13 +1,14 @@
 import propTypes from 'prop-types';
 import React from 'react';
 
-const TableScreen = (props) => {
-  const { data } = props;
-  return <span>{data}</span>;
-};
+const TableScreen = ({ data }) => <span>{data}</span>;
 
 TableScreen.propTypes = {
-  data: propTypes.string.isRequired,
+  data: propTypes.oneOfType([propTypes.string, propTypes.any]),
+};
+
+TableScreen.defaultProps = {
+  data: '',
 };
 
 export default TableScreen;
