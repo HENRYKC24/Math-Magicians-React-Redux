@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { tr } from './TableRow.module.css';
+import { tr } from '../cssModules/TableRow.module.css';
 import TableData from './TableData';
 
 const TableRow = ({ rowData, handleClick, otherProps }) => (
