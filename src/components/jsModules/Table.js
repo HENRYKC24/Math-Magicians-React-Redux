@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TableRow from './TableRow';
-import { table } from './Table.module.css';
+import { table } from '../cssModules/Table.module.css';
 
 const Table = ({ tableData, handleClick, otherProps }) => (
   <table className={table}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { td } from './TableData.module.css';
+import { td } from '../cssModules/TableData.module.css';
 import TableScreen from './TableScreen';
 
 const TableData = ({
