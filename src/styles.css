@@ -1,16 +1,50 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(209, 174, 174);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5vw;
+}
+
+.nav-items {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.item {
+  text-decoration: none;
+}
+
+.active-link {
+  color: rgb(21, 87, 8);
+}
+
+.app-name {
+  font-size: 1rem;
+  text-align: center;
 }
 
 .table {
   border: 1px solid #bababa;
   border-collapse: collapse;
-  margin: 50px auto;
+  margin: 30px auto;
   width: 90vw;
   background-color: #e0e0e0;
   font-size: 1.7rem;
   font-family: sans-serif;
+}
+
+.lets {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .tr {
@@ -32,6 +66,26 @@ td {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+.change-quote {
+  background-color: rgb(21, 87, 8);
+  color: #fff;
+  border: 2px solid rgb(21, 87, 8);
+  padding: 10px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.change-quote:hover {
+  background-color: #333;
+}
+
+.home,
+.quotes,
+.not-found {
+  margin: 40px 5vw;
 }
 
 tr:first-child td,
@@ -71,7 +125,43 @@ tr:not(:first-child) td:active {
 
 @media screen and (min-width: 800px) {
   .table {
-    width: 50%;
+    width: 60%;
+    margin: 0;
+  }
+
+  .app-name {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .welcome {
+    font-size: 1.7rem;
+  }
+
+  .para {
+    font-size: 1.5rem;
+  }
+
+  .nav-items {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .calculator-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 5vw;
+  }
+
+  .lets {
+    width: 40%;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
   }
 
   tr:first-child td,
