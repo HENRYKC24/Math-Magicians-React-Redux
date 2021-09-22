@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './pages/AppRoutes';
 import './styles.css';
-import Calculator from './components/Calculator';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calculator />
+    <Router basename={process.env.PUBLIC_URL}>
+      <AppRoutes />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );
