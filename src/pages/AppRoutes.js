@@ -21,7 +21,7 @@ const AppRoutes = () => (
         <Quotes />
       </Route>
 
-      <Route path="*">
+      <Route path="/*">
         <PageNotFound />
       </Route>
     </Switch>
