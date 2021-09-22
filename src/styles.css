@@ -3,10 +3,35 @@ body {
   padding: 0;
 }
 
+.table {
+  border: 1px solid #bababa;
+  border-collapse: collapse;
+  margin: 50px auto;
+  width: 90vw;
+  background-color: #e0e0e0;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+}
+
+.tr {
+  display: flex;
+  justify-content: center;
+  line-height: 80px;
+}
+
 td {
   width: 24.9%;
   padding: 0;
   margin: 0;
+}
+
+.td {
+  border: 1px solid #bababa;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 tr:first-child td,
@@ -45,6 +70,10 @@ tr:not(:first-child) td:active {
 }
 
 @media screen and (min-width: 800px) {
+  .table {
+    width: 50%;
+  }
+
   tr:first-child td,
   tr:first-child td span {
     font-size: 2rem;
