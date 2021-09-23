@@ -5,13 +5,29 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: rgb(209, 174, 174);
+  width: 100%;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  height: 70px;  
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 5vw;
+  padding: 0 5vw;
+  background-color: rgb(29, 21, 143);
+  box-shadow: 3px 0 5px rgb(247, 243, 243);
+  color: #fff;
+  z-index: 10;
 }
 
 .nav-items {
@@ -23,16 +39,21 @@ body {
 
 .item {
   text-decoration: none;
+  color: #fff;
 }
 
 .active-link {
-  color: rgb(21, 87, 8);
+  color: rgb(152, 199, 143);
 }
 
 .app-name {
   font-size: 1rem;
   text-align: center;
-  color: #551a8b;
+}
+
+.welcome {
+  font-family: 'Satisfy', cursive;
+  font-size: 2.5rem;
 }
 
 .table {
@@ -43,6 +64,7 @@ body {
   background-color: #e0e0e0;
   font-size: 1.7rem;
   font-family: sans-serif;
+  box-shadow: 5px 5px 6px rgb(8, 8, 8);
 }
 
 .lets {
@@ -73,9 +95,9 @@ td {
 }
 
 .change-quote {
-  background-color: rgb(21, 87, 8);
+  background-color: black;
   color: #fff;
-  border: 2px solid rgb(21, 87, 8);
+  border: 2px solid black;
   padding: 10px;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -83,7 +105,9 @@ td {
 }
 
 .change-quote:hover {
-  background-color: #333;
+  background-color: rgb(20, 77, 8);
+  border-color: rgb(20, 77, 8);
+  color: #fff;
 }
 
 .not-found {
@@ -115,7 +139,7 @@ tr:first-child td span {
 }
 
 tr:not(:first-child) td:last-child {
-  background-color: #f5913e;
+  background-color: rgb(29, 21, 143);
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
@@ -126,12 +150,12 @@ tr:last-child td:first-child {
 }
 
 tr:first-child {
-  background-color: #858693;
+  background-color: rgb(44, 39, 39);
   color: #fff;
 }
 
 tr:not(:first-child) td:hover {
-  background-color: #555;
+  background-color: rgb(44, 39, 39);
   color: #fff;
   cursor: pointer;
 }
@@ -144,6 +168,26 @@ tr:not(:first-child) td:active {
 .para {
   font-family: 'Satisfy', cursive;
   font-size: 2rem;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.8rem;
+  background-color: rgb(29, 21, 143);
+  color: #fff;
+}
+
+section {
+  margin: 0;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -196,5 +240,9 @@ tr:not(:first-child) td:active {
 
   tr {
     height: 80px;
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
   }
 }

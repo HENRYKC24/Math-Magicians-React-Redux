@@ -6,25 +6,31 @@ import Navbar from '../components/Navbar';
 import HomePage from './HomePage';
 import QuotesPage from './QuotesPage';
 import PageNotFound from './PageNotFound';
+import Footer from '../components/Footer';
 
 const AppRoutes = () => (
-  <>
-    <Navbar />
-    <Switch>
-      <Route path="/calculator">
-        <CalculatorPage />
-      </Route>
-      <Route path="/quotes">
-        <QuotesPage />
-      </Route>
-      <Route exact path="/">
-        <HomePage />
-      </Route>
-      <Route path="*">
-        <PageNotFound />
-      </Route>
-    </Switch>
-  </>
+  <div className="main">
+    <section>
+      <Navbar />
+      <Switch>
+        <Route path="/calculator">
+          <CalculatorPage />
+        </Route>
+        <Route path="/quotes">
+          <QuotesPage />
+        </Route>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route path="*">
+          <PageNotFound />
+        </Route>
+      </Switch>
+    </section>
+    <section>
+      <Footer />
+    </section>
+  </div>
 );
 
 export default AppRoutes;
