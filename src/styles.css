@@ -91,6 +91,10 @@ td {
   font-size: 2rem;
 }
 
+.quotes {
+  text-align: center;
+}
+
 .quote {
   font-family: 'Satisfy', cursive;
   font-size: 2.5rem;
