@@ -1,6 +1,5 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { td } from '../cssModules/TableData.module.css';
 import TableScreen from './TableScreen';
 
 const TableData = ({
@@ -10,7 +9,7 @@ const TableData = ({
 }) => {
   const mapArray = [total, operation, next];
   return data === 0 ? (
-    <td className={td}>
+    <td className="td">
       <div>
         {mapArray.map((data) => (
           <TableScreen key={Math.random()} data={data} />
@@ -18,7 +17,7 @@ const TableData = ({
       </div>
     </td>
   ) : (
-    <td className={td}>
+    <td className="td">
       <div aria-hidden onClick={() => handleClick(data)}>
         {data}
       </div>
