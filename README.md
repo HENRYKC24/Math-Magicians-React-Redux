@@ -3,6 +3,7 @@ This is a calculator app with other features built in it. It has some quotes on 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot_mobile.png)
 
 ## LiveLink
 [LiveLink](https://henrykc24.github.io/Math-Magicians-React-Redux/)
