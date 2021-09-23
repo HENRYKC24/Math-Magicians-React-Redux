@@ -46,8 +46,9 @@ body {
 }
 
 .lets {
+  font-family: 'Satisfy', cursive;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .tr {
@@ -138,6 +139,7 @@ tr:not(:first-child) td:active {
 
 .para {
   font-family: 'Satisfy', cursive;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 800px) {
