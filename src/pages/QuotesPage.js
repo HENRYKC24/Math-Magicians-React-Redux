@@ -23,7 +23,11 @@ const Quotes = () => {
   return (
     <div className="quotes">
       {!quote.dataAvailable && <p>Loading...</p>}
-      <p className="quote">{quote.quote && `${quote.quote} - ${quote.author}`}</p>
+      <p className="quote">
+        {quote.quote && `${quote.quote}`}
+        <br />
+        <span className="quote">{quote.quote && `- ${quote.author}`}</span>
+      </p>
       {quote.quote && <button className="change-quote" type="button" onClick={getQuote}>Change Quote</button>}
     </div>
   );
