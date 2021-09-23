@@ -1,34 +1,37 @@
 import React, { useState, useEffect } from 'react';
 
 const Quotes = () => {
-  const [quote, setQuote] = useState({
+  const [currentQuote, setCurrentQuote] = useState({
     dataAvailable: false,
+    quote: '',
+    author: '',
   });
 
   const getQuote = () => {
-    setQuote(() => ({
+    setCurrentQuote(() => ({
       dataAvailable: false,
     }));
 
     fetch('https://random-math-quote-api.herokuapp.com/')
       .then((result) => result.json())
-      .then((data) => setQuote({
+      .then((data) => setCurrentQuote({
         ...data,
         dataAvailable: true,
       }));
   };
 
   useEffect(() => getQuote(), []);
+  const { dataAvailable, quote, author } = currentQuote;
 
   return (
     <div className="quotes">
-      {!quote.dataAvailable && <p>Loading...</p>}
+      {!dataAvailable && <p>Loading...</p>}
       <p className="quote">
-        {quote.quote && `${quote.quote}`}
+        {quote && `${quote}`}
         <br />
-        <span className="quote">{quote.quote && `- ${quote.author}`}</span>
+        <span className="quote">{quote && `- ${author}`}</span>
       </p>
-      {quote.quote && <button className="change-quote" type="button" onClick={getQuote}>Change Quote</button>}
+      {quote && <button className="change-quote" type="button" onClick={getQuote}>Change Quote</button>}
     </div>
   );
 };
