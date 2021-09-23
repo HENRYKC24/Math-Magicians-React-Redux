@@ -33,8 +33,10 @@ body {
 .nav-items {
   list-style-type: none;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .item {
@@ -175,7 +177,6 @@ tr:not(:first-child) td:active {
   padding: 0;
   height: 50px;
   line-height: 50px;
-  font-size: 0.8rem;
   background-color: rgb(29, 21, 143);
   color: #fff;
 }
@@ -187,7 +188,7 @@ section {
 .footer-text {
   text-align: center;
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -212,6 +213,7 @@ section {
   .nav-items {
     font-size: 1.5rem;
     text-decoration: none;
+    gap: 10px;
   }
 
   .calculator-page {
