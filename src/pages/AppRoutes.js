@@ -1,24 +1,24 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Calculator2 from './Calculator2';
+import CalculatorPage from './CalculatorPage';
 import Navbar from '../components/Navbar';
-import Home from './Home';
-import Quotes from './Quotes';
+import HomePage from './HomePage';
+import QuotesPage from './QuotesPage';
 import PageNotFound from './PageNotFound';
 
 const AppRoutes = () => (
   <>
     <Navbar />
     <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
       <Route path="/calculator">
-        <Calculator2 />
+        <CalculatorPage />
       </Route>
       <Route path="/quotes">
-        <Quotes />
+        <QuotesPage />
+      </Route>
+      <Route exact path="/">
+        <HomePage />
       </Route>
       <Route path="*">
         <PageNotFound />
