@@ -1,5 +1,5 @@
 import React from 'react';
-import Li from './Li';
+import ListItem from './ListItem';
 
 const Navbar = () => {
   const routes = [
@@ -13,7 +13,7 @@ const Navbar = () => {
       <h1 className="app-name">Math Magicians</h1>
       <ul className="nav-items">
         {routes.map((route, index) => (
-          <Li
+          <ListItem
             key={Math.random()}
             index={index}
             name={route.name}
