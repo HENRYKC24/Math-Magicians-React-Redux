@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -30,6 +32,7 @@ body {
 .app-name {
   font-size: 1rem;
   text-align: center;
+  color: #551a8b;
 }
 
 .table {
@@ -82,6 +85,16 @@ td {
   background-color: #333;
 }
 
+.not-found {
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
+}
+
+.quote {
+  font-family: 'Satisfy', cursive;
+  font-size: 2.5rem;
+}
+
 .home,
 .quotes,
 .not-found {
@@ -123,6 +136,10 @@ tr:not(:first-child) td:active {
   color: #000;
 }
 
+.para {
+  font-family: 'Satisfy', cursive;
+}
+
 @media screen and (min-width: 800px) {
   .table {
     width: 60%;
@@ -133,16 +150,13 @@ tr:not(:first-child) td:active {
     font-size: 2rem;
   }
 
-  .quote {
-    font-size: 2rem;
-  }
-
   .welcome {
-    font-size: 1.7rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
   }
 
   .para {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .nav-items {
@@ -158,6 +172,7 @@ tr:not(:first-child) td:active {
 
   .lets {
     width: 40%;
+    font-family: 'Satisfy', cursive;
     font-size: 3rem;
     margin: 0;
     padding: 0;
