@@ -4,6 +4,7 @@ This is a calculator app with other features built in it. It has some quotes on 
 
 ![screenshot](./app_screenshot.png)
 ![screenshot](./app_screenshot_mobile.png)
+![screenshot](./test.png)
 
 ## LiveLink
 [LiveLink](https://henrykc24.github.io/Math-Magicians-React-Redux/)

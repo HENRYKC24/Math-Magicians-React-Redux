@@ -1,24 +1,52 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import TableScreen from './TableScreen';
+// import TableScreen from './TableScreen';
 
 const TableData = ({
   data,
   handleClick,
   otherProps: { next, operation, total },
 }) => {
-  const mapArray = [total, operation, next];
-  return data === 0 ? (
+  const validateClass = (char) => {
+    const invalidChar = [
+      '÷',
+      '-',
+      '+',
+      '%',
+      '+/-',
+      '=',
+      '.',
+    ];
+    const substituteChar = [
+      'Divide',
+      'Subtract',
+      'Add',
+      'Modulus',
+      'PlusMinus',
+      'Equal',
+      'Dot',
+    ];
+    if (!invalidChar.includes(char)) {
+      return char;
+    }
+    return substituteChar[invalidChar.indexOf(char)];
+  };
+  if (data === 0) {
+    return (
+      <td className="td">
+        <div>
+          <span className="result">
+            {`${total === 0 || !!total ? total : ''}${
+              operation === 0 || !!operation ? operation : ''
+            }${next === 0 || !!next ? next : ''}`}
+          </span>
+        </div>
+      </td>
+    );
+  }
+  return (
     <td className="td">
-      <div>
-        {mapArray.map((data) => (
-          <TableScreen key={Math.random()} data={data} />
-        ))}
-      </div>
-    </td>
-  ) : (
-    <td className="td">
-      <div aria-hidden onClick={() => handleClick(data)}>
+      <div className={`div${validateClass(data)}`} aria-hidden onClick={() => handleClick(data)}>
         {data}
       </div>
     </td>
