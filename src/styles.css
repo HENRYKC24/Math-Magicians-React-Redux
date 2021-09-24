@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: rgb(209, 174, 174);
+  background-color: rgb(212, 206, 206);
   width: 100%;
 }
 
@@ -24,7 +24,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 5vw;
-  background-color: rgb(29, 21, 143);
+  background-color: #1f2326;
   box-shadow: 3px 0 5px rgb(247, 243, 243);
   color: #fff;
   z-index: 10;
@@ -42,6 +42,10 @@ body {
 .item {
   text-decoration: none;
   color: #fff;
+}
+
+.item:hover {
+  text-decoration: underline;
 }
 
 .active-link {
@@ -97,9 +101,9 @@ td {
 }
 
 .change-quote {
-  background-color: black;
+  background-color: #1f2326;
   color: #fff;
-  border: 2px solid black;
+  border: 2px solid #1f2326;
   padding: 10px;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -107,14 +111,18 @@ td {
 }
 
 .change-quote:hover {
-  background-color: rgb(20, 77, 8);
-  border-color: rgb(20, 77, 8);
+  background-color:rgb(83, 126, 74);
+  border-color: rgb(83, 126, 74);
   color: #fff;
 }
 
 .not-found {
   font-family: 'Satisfy', cursive;
   font-size: 2rem;
+}
+
+.loading {
+  font-size: 1.5rem;
 }
 
 .quotes {
@@ -141,7 +149,7 @@ tr:first-child td span {
 }
 
 tr:not(:first-child) td:last-child {
-  background-color: rgb(29, 21, 143);
+  background-color: rgb(78, 68, 216);
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
@@ -152,12 +160,12 @@ tr:last-child td:first-child {
 }
 
 tr:first-child {
-  background-color: rgb(44, 39, 39);
+  background-color: #1f2326;
   color: #fff;
 }
 
 tr:not(:first-child) td:hover {
-  background-color: rgb(44, 39, 39);
+  background-color: #1f2326;
   color: #fff;
   cursor: pointer;
 }
@@ -177,7 +185,7 @@ tr:not(:first-child) td:active {
   padding: 0;
   height: 50px;
   line-height: 50px;
-  background-color: rgb(29, 21, 143);
+  background-color: #1f2326;
   color: #fff;
 }
 
