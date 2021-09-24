@@ -25,7 +25,7 @@ const Quotes = () => {
 
   return (
     <div className="quotes">
-      {!dataAvailable && <p>Loading...</p>}
+      {!dataAvailable && <p className="loading">Loading...</p>}
       <p className="quote">
         {quote && `${quote}`}
         <br />
