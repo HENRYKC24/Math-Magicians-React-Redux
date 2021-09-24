@@ -7,7 +7,7 @@ it('Navbar renders the UI as expected', () => {
   const tree = renderer.create(
     <Router>
       <Navbar />
-    </Router>
+    </Router>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
