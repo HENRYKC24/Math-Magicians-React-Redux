@@ -106,4 +106,5 @@ typings/
 
 # Build
 dist/
-build/
+# Local Netlify folder
+.netlify
