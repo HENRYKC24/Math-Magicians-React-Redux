@@ -6,8 +6,12 @@ This is a calculator app with other features built in it. It has some quotes on 
 ![screenshot](./app_screenshot_mobile.png)
 ![screenshot](./test.png)
 
-## LiveLink
-[LiveLink](https://henrykc24.github.io/Math-Magicians-React-Redux/)
+## LiveLinks
+[LiveLink GitHub Pages](https://henrykc24.github.io/Math-Magicians-React-Redux/)
+
+[LiveLink Heroku Deploy](https://math-magic-react.herokuapp.com/Math-Magicians-React-Redux/)
+
+[LiveLink Netlify Deploy](https://quizzical-nightingale-aa894f.netlify.app)
 
 ## Available Scripts
 
